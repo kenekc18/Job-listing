@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    width:1200px;
+    font-family: 'League Spartan', sans-serif;
+    background-color:hsl(180, 52%, 96%);
+    overflow-x: hidden;
+}
+
+h3,h4,h5{
+    font-weight: 700;
+}
+
+.header-bg{
+    background-color: hsl(180, 29%, 50%);
+    background-size: cover;
+    width:100%;
+}
+
+.mobile-header{
+    display:none;
+}
+
+.job-listingzz{
+    margin: 0 20px;
+}
+
+.job-listing{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:170px;
+    box-shadow:7px 6px 33px -7px rgba(0,0,0,0.57);;
+    background-color: #fff;
+    margin:20px 15px;
+    padding:0 25px;
+}
+
+.main-info{
+    display: flex;
+}
+
+.job-logo{
+    width: 90px;
+    height: 94px
+}
+
+.description-info{
+    margin-left: 15px;
+}
+
+.status{
+    display:flex;
+}
+
+.company, .filter-info{
+    color:hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
+.new{
+    margin-left:8px;
+    padding:4px 6px;
+    background-color: hsl(180, 29%, 50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#fff;
+    border-radius: 15px;
+    padding-top: 7px;
+}
+
+
+.new.ft{
+    background:hsl(180, 8%, 52%);
+}
+
+.time-post{
+    list-style:none;
+}
+
+.other-info{
+    display:flex;
+}
+
+.filter-info p{
+    padding:5px 6px;
+    background-color: hsl(180, 31%, 95%);
+    margin-right:7px;
+    margin-bottom:8px;
+}
+
+.filter-info,.language{
+    display:flex;
+}
+
+@media(max-width:500px){
+    body{
+        width:500px;
+    }
+
+    .mobile-header{
+        display:block;
+    }
+
+    .header-bg{
+        display:none;
+    }
+    
+    .main-info{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .job-listing{
+        display:flex;
+        flex-direction:column;
+        margin: 30px 15px;
+        width: 320px;
+        height:224px;
+        position:relative;
+        z-index:1;
+    }
+
+    .job-title{
+        font-size: 1.1rem;
+    }
+
+    .filter-info{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+
+    }
+
+    .description-info{
+        margin-right:35px;
+        margin-left: -15px;
+    }
+
+
+    .line{
+        width:300px;
+        background-color: hsl(180, 14%, 20%);
+        height:2px;
+    }
+
+    .job-logo{
+        width:50px;
+        height:52px;
+        position: relative;
+        z-index: 2;
+        bottom: 18%;
+    }
+
+    .new{
+        font-size:12px;
+    }
+}
